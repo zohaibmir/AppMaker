@@ -58,8 +58,8 @@ try {
             $response_array['redirect'] = "application.php";
         }
     }
-     $response_array['status'] = "success";
-     $response_array['message'] = "Company information updated Successfully";
+    $response_array['status'] = "success";
+    $response_array['message'] = "Company information updated Successfully";
 } catch (Exception $exc) {
     $response_array['status'] = "error";
     $response_array['message'] = " . $exc->getMessage() . ";

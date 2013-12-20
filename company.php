@@ -79,7 +79,7 @@ and open the template in the editor.
             $objCompany = new Company();
             $objContact = new CompanyContact();
             $objCompanyManager = AppMakerFactory::CreateObject("Company");
-            if(!isset($_SESSION["userId"])) {
+            if(isset($_SESSION["userId"])) {
                $objlist = $objCompanyManager->GetCompanyByUserId(3);
                $objCompany = $objlist["ObjCompany"];
                $objContact = $objlist["ObjCompanyContact"];               
